@@ -8,7 +8,7 @@ function biodata(name, age){
 //var array_raw = array_id
 this.json = (array_raw)=>{for(var i = 0; i<array_raw.length; i++){
 
-    if (array_raw[i].name == name && array_raw[i].age ==age && array_raw[i].list_school.major == null){
+    if (array_raw[i].name == name && array_raw[i].age ==age && array_raw[i].list_school.major == null){ //if not contain major then major = null
         array_raw[i].list_school.major = null
         return array_raw[i]
     } 
